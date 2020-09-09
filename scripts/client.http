@@ -1,0 +1,17 @@
+### create file
+PUT http://localhost:8080/file/example.csv
+Accept: */*
+Cache-Control: no-cache
+
+< C:/Go/bin/src/rest-fs/scripts/upload.csv
+
+###
+
+### upsert file
+POST http://localhost:8080/file/example.csv
+Accept: */*
+Cache-Control: no-cache
+
+< C:/Go/bin/src/rest-fs/scripts/upload2.csv
+
+###
